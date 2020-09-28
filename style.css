@@ -1,0 +1,28 @@
+.form-element {
+  margin-bottom: 0.5em;
+}
+
+.form-element input,
+.form-element select {
+  border: 1px solid #ccc;
+  border-radius: 0.25em;
+}
+
+.form-element label,
+.form-element input {
+  display: inline-block;
+  width: 6em;
+}
+
+.form-element button {
+  padding: 0.5em 1em;
+  background: #48c;
+  color: #fff;
+  border: none;
+}
+
+.error-result {
+  padding: 0.5em 1em;
+  background: #c44;
+  color: #fff;
+}

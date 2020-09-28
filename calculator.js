@@ -15,18 +15,22 @@ calculateBtn.addEventListener(
 
     if (operand1.value === '' || operand2.value === '') {
       resultDiv.innerText = 'Veuillez saisir deux valeurs';
+      resultDiv.classList.add('error-result');
       return;
     }
     const op1int = parseInt(operand1.value);
     const op2int = parseInt(operand2.value);
     if (Number.isNaN(op1int) || Number.isNaN(op2int)) {
       resultDiv.innerText = 'Veuillez saisir des nombres valides';
+      resultDiv.classList.add('error-result');
       return;
     }
     if (operator.value === '/' && op2int === 0) {
       resultDiv.innerText = 'Impossible de diviser par zéro !';
+      resultDiv.classList.add('error-result');
       return;
     }
+    resultDiv.classList.remove('error-result');
     let result;
 
     switch (operator.value) {
