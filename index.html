@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM Calculator</title>
+</head>
+<body>
+  <h1>DOM Calculator</h1>
+
+  <div>
+    <label for="operand-1">Operand 1</label>
+    <input id="operand-1" />
+  </div>
+
+  <div>
+    <label for="operand-2">Operand 2</label>
+    <input id="operand-2" />
+  </div>
+
+  <div>
+    <label for="operator">Operator</label>
+    <select id="operator">
+      <option value="+">+</option>
+      <option value="-">-</option>
+      <option value="*">*</option>
+      <option value="/">/</option>
+    </select>
+  </div>
+
+  <div>
+    <button id="calculate">Calculate</button>
+  </div>
+
+  <div id="result"></div>
+
+  <script src="calculator.js"></script>
+</body>
+</html>
